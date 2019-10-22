@@ -1,0 +1,18 @@
+2.
+Linux pi64 4.19.67-v8-174fcab91765-bis+ #2 SMP PREEMPT Tue Aug 27 13:29:20 GMT 2019 aarch64 GNU/Linux
+
+3.
+Linux kvm-bionic 4.15.0-66-generic #75-Ubuntu SMP Tue Oct 1 05:25:33 UTC 2019 aarch64 aarch64 aarch64 GNU/Linux
+
+4.
+real	1m13.155s
+user	0m0.007s
+sys	0m0.054s
+
+5.
+qemu-system-aarch64 -M virt \
+  -m 256M -smp 2  -nographic \
+  -bios QEMU_EFI.fd \
+  -cdrom seed-kvm-bionic-01.iso \
+  -drive if=none,file=bionic-image-01.img,id=hd0 -device virtio-blk-device,drive=hd0 \
+  -device virtio-net-device,netdev=vmnic -netdev user,id=vmnic  
