@@ -1,0 +1,40 @@
+2.
+randon_access:
+demouser@pi64 ~ $ ./random_access 64
+Iteration 0 finished
+Iteration 1 finished
+Iteration 2 finished
+Iteration 3 finished
+
+real	0m37.196s
+user	0m0.003s
+sys	0m0.028s
+
+dense_mm:
+demouser@pi64 ~ $ ./dense_mm 512
+Generating matrices...
+Multiplying matrices...
+Multiplication done!
+
+real	0m35.600s
+user	0m0.005s
+sys	0m0.016s
+
+3.
+random_access:
+ubuntu@kvm-bionic:~$ ./random_access 64
+Iteration 0 finished
+Iteration 1 finished
+Iteration 2 finished
+Iteration 3 finished
+
+real	0m57.545s
+user	0m0.010s
+sys	0m0.023s
+
+dense_mm:
+real	0m37.568s
+user	0m0.005s
+sys	0m0.017s
+
+
