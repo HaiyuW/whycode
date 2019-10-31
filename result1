@@ -1,0 +1,26 @@
+2.
+ubuntu@kvm-bionic:~$ lsmod | grep virtio
+virtio_net             49152  0
+virtio_blk             20480  3
+
+3.
+(1)READ: bw=13.2MiB/s (13.9MB/s), 13.2MiB/s-13.2MiB/s (13.9MB/s-13.9MB/s), io=256MiB (268MB), run=19349-19349msec
+(2)WRITE: bw=9751KiB/s (9985kB/s), 9751KiB/s-9751KiB/s (9985kB/s-9985kB/s), io=256MiB (268MB), run=26883-26883msec
+(3)READ: bw=2114KiB/s (2165kB/s), 2114KiB/s-2114KiB/s (2165kB/s-2165kB/s), io=256MiB (268MB), run=123982-123982msec
+(4)WRITE: bw=3668KiB/s (3756kB/s), 3668KiB/s-3668KiB/s (3756kB/s-3756kB/s), io=256MiB (268MB), run=71466-71466msec
+
+4..7
+(1)READ: bw=18.8MiB/s (19.7MB/s), 18.8MiB/s-18.8MiB/s (19.7MB/s-19.7MB/s), io=256MiB (268MB), run=13600-13600msec
+(2)WRITE: bw=14.2MiB/s (14.9MB/s), 14.2MiB/s-14.2MiB/s (14.9MB/s-14.9MB/s), io=256MiB (268MB), run=18068-18068msec
+(3)READ: bw=5579KiB/s (5712kB/s), 5579KiB/s-5579KiB/s (5712kB/s-5712kB/s), io=256MiB (268MB), run=46991-46991msec
+(4)WRITE: bw=1786KiB/s (1829kB/s), 1786KiB/s-1786KiB/s (1829kB/s-1829kB/s), io=256MiB (268MB), run=146770-146770msec
+
+5. 
+2.77 Mbits/sec
+3.66
+8.71
+
+6.
+1.14
+1.05
+1.06
